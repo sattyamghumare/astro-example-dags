@@ -4,7 +4,7 @@ from airflow.providers.amazon.aws.operators.glue import GlueJobOperator
 from airflow.utils.dates import days_ago
  
 with DAG(
-    dag_id="aws_services_etl_dag",
+    dag_id="aws_services_etl_dags",
     schedule_interval=None,
     start_date=days_ago(1),
     catchup=False,
